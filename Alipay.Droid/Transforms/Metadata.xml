@@ -1,0 +1,16 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  --> 
+  <attr path="/api/package[@name='com.alipay.api.response']/class[@name='AlipayAcquireCloseResponse']/method[@name='getIsSuccess' and count(parameter)=0]" name="managedName">getIsSuccess</attr>
+  <attr path="/api/package[@name='com.alipay.api.response']/class[@name='AlipayAcquirePrecreateResponse']/method[@name='getIsSuccess' and count(parameter)=0]" name="managedName">getIsSuccess</attr>
+
+
+  <attr path="/api/package[@name='com.alipay.api.response']/class[@name='AlipayAcquireCloseResponse']/method[@name='setIsSuccess' and count(parameter)=1]" name="managedName">setIsSuccess</attr>
+  <attr path="/api/package[@name='com.alipay.api.response']/class[@name='AlipayAcquirePrecreateResponse']/method[@name='setIsSuccess' and count(parameter)=1]" name="managedName">setIsSuccess</attr>
+   
+</metadata>
